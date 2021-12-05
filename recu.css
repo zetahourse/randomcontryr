@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: rgb(154,237,255);
+}
+p {
+	position: relative;
+	left: 20vw;
+	top: 25vh;
+	font-size: 10vw;
+}
+
+button {
+	position: relative;
+	left: 35vw;
+	top: 50vh;
+	font-size: 3vw;
+	width: 30vw;
+	height: 10vh;
+	background-color: rgb(154, 235, 255);
+	border: none;
+	box-shadow: 1px 2px 3px white;
+}
+button:hover {
+	animation: but 0.5s linear  ;
+}
+@keyframes but {
+	from {
+		box-shadow: 1px 3px 6px white;
+	}
+	to {
+		box-shadow: 0px 0px 0px white;
+	}
+}

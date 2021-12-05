@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="recu.css" type="text/css"/>
+	</head>
+	<body>
+		
+		 </nav>
+		 <div class="c_c">
+		 	<li id="para">
+		
+		 	</li>
+		 	<button onclick="get_random_video()">Contraseña</button>
+		 </div>
+		 <script>
+		 			function get_random_video(){
+		 					array1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","CH","LL","QU"]
+		 					array2 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ch","ll","qu"]
+		 					array3 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ch","ll","qu"]
+		 					array4 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Ch","Ll","Qu"]
+		 					array5 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ch","ll","qu"]
+		 					array6 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ch","ll","qu"]
+		 					array7 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ch","ll","qu","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Ch","Ll","Qu","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","CH","LL","QU"]
+		 					array8 = ["1","2","3","4","5","6","7","8","9","0"]
+		 					array9 = ["!","@","*","#","+","&","?"]
+  // Get a random index
+  random_index1 = Math.floor(Math.random() * array1.length);
+  random_index2 = Math.floor(Math.random() * array2.length);
+  random_index3 = Math.floor(Math.random() * array3.length);
+  random_index4 = Math.floor(Math.random() * array4.length);
+  random_index5 = Math.floor(Math.random() * array5.length);
+  random_index6 = Math.floor(Math.random() * array6.length);
+  random_index7 = Math.floor(Math.random() * array7.length);
+  random_index8 = Math.floor(Math.random() * array8.length);
+  random_index9 = Math.floor(Math.random() * array9.length);
+
+  // Get a video at the random_index
+  selected_link1 = array1[random_index1]
+  selected_link2 = array2[random_index2]
+  selected_link3 = array3[random_index3]
+  selected_link4 = array4[random_index4]
+  selected_link5 = array5[random_index5]
+  selected_link6 = array6[random_index6]
+  selected_link7 = array7[random_index7]
+  selected_link8 = array8[random_index8]
+  selected_link9 = array9[random_index9]
+
+  // Display the video
+  document.getElementById('para').innerHTML = ` <p >${selected_link1}${selected_link2}${selected_link3}${selected_link4}${selected_link5}${selected_link6}${selected_link7}${selected_link8}${selected_link9}
+  
+  </p>`
+}
+		 </script>
+	</body>
+</html>
